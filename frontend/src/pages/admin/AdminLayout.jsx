@@ -52,7 +52,7 @@ export default function AdminLayout() {
 
       {/* Mobile top bar */}
       <div className="lg:hidden fixed top-0 inset-x-0 z-40 bg-[#060d1a] border-b border-[#4facfe]/15 px-4 h-16 flex items-center justify-between">
-        <Logo size={38} withText={false} />
+        <Logo size={44} />
         <div className="flex gap-1 overflow-x-auto">
           {links.map((l) => (
             <NavLink key={l.to} to={l.to} end={l.end} className={({ isActive }) => `p-2.5 rounded-lg ${isActive ? "bg-[#2f7bff] text-white" : "text-slate-300"}`}>

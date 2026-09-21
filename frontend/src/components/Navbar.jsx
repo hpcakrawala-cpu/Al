@@ -28,7 +28,7 @@ export default function Navbar() {
     >
       <nav className="max-w-[1400px] mx-auto px-5 lg:px-8 h-[76px] flex items-center justify-between">
         <Link to="/" aria-label="Beranda">
-          <Logo size={46} />
+          <Logo size={64} />
         </Link>
 
         <ul className="hidden lg:flex items-center gap-8">

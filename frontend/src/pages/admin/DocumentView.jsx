@@ -10,17 +10,8 @@ function Letterhead() {
   return (
     <div className="flex items-start justify-between border-b-4 border-[#0d2350] pb-5">
       <div className="flex items-center gap-4">
-        <svg viewBox="0 0 100 100" width="58" height="58">
-          <defs>
-            <linearGradient id="lh" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#2f7bff" /><stop offset="100%" stopColor="#0d2350" />
-            </linearGradient>
-          </defs>
-          <ellipse cx="50" cy="50" rx="46" ry="20" fill="none" stroke="#2f7bff" strokeWidth="3" transform="rotate(-28 50 50)" />
-          <text x="50" y="68" textAnchor="middle" fontFamily="Plus Jakarta Sans, sans-serif" fontWeight="800" fontSize="56" fill="url(#lh)">88</text>
-        </svg>
-        <div>
-          <div className="font-display font-extrabold text-xl text-[#0d2350] leading-tight">PT DELAPAN DELAPAN INDUSTRI</div>
+        <img src="/logo88.png" alt="PT Delapan Delapan Industri" className="h-20 w-auto object-contain" />
+        <div className="pt-2">
           <div className="text-[#2f7bff] text-xs font-semibold tracking-[0.25em]">KAROSERI UNIVERSAL INDUSTRI</div>
         </div>
       </div>
