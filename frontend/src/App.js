@@ -17,6 +17,9 @@ import DocumentList from "./pages/admin/DocumentList";
 import InvoiceCreate from "./pages/admin/InvoiceCreate";
 import KwitansiCreate from "./pages/admin/KwitansiCreate";
 import DocumentView from "./pages/admin/DocumentView";
+import SuratList from "./pages/admin/SuratList";
+import SuratCreate from "./pages/admin/SuratCreate";
+import SuratView from "./pages/admin/SuratView";
 import ScrollToTop from "./components/ScrollToTop";
 
 function PublicLayout({ children }) {
@@ -50,6 +53,10 @@ function App() {
             <Route path="dokumen" element={<DocumentList />} />
             <Route path="invoice/baru" element={<InvoiceCreate />} />
             <Route path="kwitansi/baru" element={<KwitansiCreate />} />
+            <Route path="surat" element={<SuratList />} />
+            <Route path="surat/baru" element={<SuratCreate />} />
+            <Route path="surat/edit/:id" element={<SuratCreate />} />
+            <Route path="surat/:id" element={<SuratView />} />
             <Route path="dokumen/:id" element={<DocumentView />} />
           </Route>
         </Routes>

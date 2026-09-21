@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet, NavLink, useNavigate, Navigate, Link } from "react-router-dom";
-import { LayoutDashboard, FileText, ReceiptText, FilePlus2, LogOut, ExternalLink } from "lucide-react";
+import { LayoutDashboard, FileText, ReceiptText, FilePlus2, LogOut, ExternalLink, FileSignature } from "lucide-react";
 import { isAuthed, setAuth } from "../../lib/storage";
 import Logo from "../../components/Logo";
 import { Button } from "../../components/ui/button";
@@ -10,6 +10,7 @@ const links = [
   { to: "/admin/dokumen", label: "Semua Dokumen", icon: FileText },
   { to: "/admin/invoice/baru", label: "Buat Invoice", icon: FilePlus2 },
   { to: "/admin/kwitansi/baru", label: "Buat Kwitansi", icon: ReceiptText },
+  { to: "/admin/surat", label: "Kop Surat", icon: FileSignature },
 ];
 
 export default function AdminLayout() {
