@@ -10,8 +10,20 @@ function Letterhead() {
   return (
     <div className="flex items-start justify-between border-b-4 border-[#0d2350] pb-5">
       <div className="flex items-center gap-4">
-        <img src="/logo88.png" alt="PT Delapan Delapan Industri" className="h-20 w-auto object-contain" />
-        <div className="pt-2">
+        <svg viewBox="0 0 130 116" width="72" height="64" className="overflow-visible">
+          <defs>
+            <linearGradient id="lhc" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#8fd0ff" /><stop offset="50%" stopColor="#2f7bff" /><stop offset="100%" stopColor="#0d2350" />
+            </linearGradient>
+            <linearGradient id="lhr" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#4facfe" /><stop offset="100%" stopColor="#0a2a8f" />
+            </linearGradient>
+          </defs>
+          <ellipse cx="65" cy="58" rx="61" ry="25" fill="none" stroke="url(#lhr)" strokeWidth="3.4" transform="rotate(-24 65 58)" />
+          <text x="65" y="86" textAnchor="middle" fontFamily="'Plus Jakarta Sans', sans-serif" fontWeight="800" fontSize="92" letterSpacing="-4" fill="url(#lhc)" stroke="#08205e" strokeWidth="1.2">88</text>
+        </svg>
+        <div>
+          <div className="font-display font-extrabold text-xl text-[#0d2350] leading-tight">PT DELAPAN DELAPAN INDUSTRI</div>
           <div className="text-[#2f7bff] text-xs font-semibold tracking-[0.25em]">KAROSERI UNIVERSAL INDUSTRI</div>
         </div>
       </div>

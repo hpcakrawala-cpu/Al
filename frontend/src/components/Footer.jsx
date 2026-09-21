@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="max-w-[1400px] mx-auto px-5 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <Logo size={72} />
+            <Logo size={58} />
             <p className="mt-5 text-slate-400 text-[15px] leading-relaxed">
               {COMPANY.tagline}. Mitra terpercaya dalam pembuatan karoseri berkualitas tinggi.
             </p>
