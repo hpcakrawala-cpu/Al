@@ -20,6 +20,10 @@ import DocumentView from "./pages/admin/DocumentView";
 import SuratList from "./pages/admin/SuratList";
 import SuratCreate from "./pages/admin/SuratCreate";
 import SuratView from "./pages/admin/SuratView";
+import SPK from "./pages/admin/SPK";
+import Kas from "./pages/admin/Kas";
+import Barang from "./pages/admin/Barang";
+import Anggota from "./pages/admin/Anggota";
 import ScrollToTop from "./components/ScrollToTop";
 
 function PublicLayout({ children }) {
@@ -57,6 +61,10 @@ function App() {
             <Route path="surat/baru" element={<SuratCreate />} />
             <Route path="surat/edit/:id" element={<SuratCreate />} />
             <Route path="surat/:id" element={<SuratView />} />
+            <Route path="spk" element={<SPK />} />
+            <Route path="kas" element={<Kas />} />
+            <Route path="barang" element={<Barang />} />
+            <Route path="anggota" element={<Anggota />} />
             <Route path="dokumen/:id" element={<DocumentView />} />
           </Route>
         </Routes>
